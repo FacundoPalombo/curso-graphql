@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon -e js,gql,css,html,graphql,ts index.js"
+    "dev": "nodemon -e js,gql,css,html,graphql,ts index.js",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@playlyfe/gql": "^2.6.1",
     "morgan": "^1.9.1",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "standard": "^12.0.1"
   }
 }
